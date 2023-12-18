@@ -6,7 +6,7 @@
 ![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=NOBITA+STREAM+BOT+!;CREATED+BY+NOBI+DEVELOPER!;A+ADVANCE+BOT+WITH+COOL+FEATURES!)
 </p>
 
-ʏᴏᴜ ᴡɪʟʟ ꜰɪɴᴅ ᴛʜɪs ʙᴏᴛ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs <b>[ɴᴏʙɪᴛᴀ sᴛʀᴇᴀᴍ ʙᴏᴛ](https://telegram.me/Nobita-Stream-Bot)</b>
+ʏᴏᴜ ᴡɪʟʟ ꜰɪɴᴅ ᴛʜɪs ʙᴏᴛ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs <b>[ɴᴏʙɪᴛᴀ sᴛʀᴇᴀᴍ ʙᴏᴛ](https://telegram.me/Nobita_Stream_Bot)</b>
 
 
 <details>
