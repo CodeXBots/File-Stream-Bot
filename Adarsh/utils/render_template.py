@@ -50,7 +50,7 @@ async def render_page(id, secure_hash):
 </p>
 <center>
     <h2>
-        <a href="https://telegram.me/BotszList">
+        <a href="https://telegram.me/NobiDeveloper">
             <img src="https://graph.org/file/b57cdba982191a25db535.jpg" alt="BotszList" width="150" height="75">
         </a>
     </h2>
