@@ -1,4 +1,4 @@
-# (c) NobiDeveloper
+# (c) CodeXBots
 
 import asyncio
 import logging
