@@ -1,1 +1,1 @@
-# (c) NobiDeveloper
+# (c) CodeXBots
