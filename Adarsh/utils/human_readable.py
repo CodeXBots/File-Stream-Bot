@@ -1,4 +1,4 @@
-# (c) NobiDeveloper
+# (c) CodeXBots
 
 
 def humanbytes(size):
