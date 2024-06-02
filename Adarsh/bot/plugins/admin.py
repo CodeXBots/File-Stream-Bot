@@ -1,4 +1,4 @@
-# (c) @nobideveloper
+# (c) @CodeXBots
 import os
 import time
 import string
