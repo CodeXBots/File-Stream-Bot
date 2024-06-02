@@ -1,4 +1,4 @@
-# (c) NobiDeveloper
+# (c) CodeXBots
 # Bot Uptime
 
 def get_readable_time(seconds: int) -> str:
