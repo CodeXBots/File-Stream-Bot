@@ -1,4 +1,4 @@
-# (c) NobiDeveloper
+# (c) CodeXBots
 from pyrogram import Client
 import pyromod.listen
 from ..vars import Var
