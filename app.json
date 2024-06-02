@@ -1,5 +1,5 @@
 {
-  "name": "Nobita",
+  "name": "Rahul",
   "description": "A Pyrogram Telegram bot to Stream Telegram files to web.",
   "keywords": [
       "telegram",
@@ -13,10 +13,10 @@
       "media",
       "bot"
     ],
-  "repository": "https://github.com/NobiDeveloper/Nobita-Stream-Bot",
+  "repository": "https://github.com/CodeXBots/Nobita-Stream-Bot",
   "success_url": "/",
   "logo": "https://i.ibb.co/MnMZ1Sy/download-1.jpg",
-  "website": "http://youtube.com/@nobideveloper",
+  "website": "http://youtube.com/@RahulReviews",
   "env": {
       "ENV": {
           "description": "Set this to True if you don't want to crash the bot",
