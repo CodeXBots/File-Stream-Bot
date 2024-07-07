@@ -1,12 +1,10 @@
 <h2 align="center">
-  「 ɴᴏʙɪᴛᴀ sᴛʀᴇᴀᴍ ʙᴏᴛ 」
+  「 ꜰɪʟᴇ sᴛʀᴇᴀᴍ ʙᴏᴛ 」
 </h2>
 
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=NOBITA+STREAM+BOT+!;CREATED+BY+RAHUL+CodeXBots!;A+ADVANCE+BOT+WITH+COOL+FEATURES!)
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=FILE+STREAM+BOT+!;CREATED+BY+RAHUL+CodeXBots!;A+ADVANCE+BOT+WITH+COOL+FEATURES!)
 </p>
-
-ʏᴏᴜ ᴡɪʟʟ ꜰɪɴᴅ ᴛʜɪs ʙᴏᴛ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs <b>[ɴᴏʙɪᴛᴀ sᴛʀᴇᴀᴍ ʙᴏᴛ](https://telegram.me/NobitaStreamBot)</b>
 
 
 <details>
@@ -78,25 +76,25 @@
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
 </h3>
 
-<p align="center"><a href="https://github.com/CodeXBots/Nobita-Stream-Bot">
+<p align="center"><a href="https://github.com/CodeXBots/File-Stream-Bot">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy On Heroku">
 </a></p>
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ᴋᴏʏᴇʙ 」─
 </h3>
-<p align="center"><a href="https://app.koyeb.com/deploy?type=git&repository=github.com/CodeXBots/Nobita-Stream-Bot&branch=main&name=Nobita-Stream-Bot">
+<p align="center"><a href="https://app.koyeb.com/deploy?type=git&repository=github.com/CodeXBots/File-Stream-Bot&branch=main&name=File-Stream-Bot">
   <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy On Koyeb">
 </a></p>
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʀᴀɪʟᴡᴀʏ 」─
 </h3>
-<p align="center"><a href="https://railway.app/deploy?template=https://github.com/CodeXBots/Nobita-Stream-Bot"">
+<p align="center"><a href="https://railway.app/deploy?template=https://github.com/CodeXBots/File-Stream-Bot"">
      <img height="45px" src="https://railway.app/button.svg">
 </a></p>
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʀᴇɴᴅᴇʀ 」─
 </h3>
-<p align="center"><a href="https://render.com/deploy?repo=https://github.com/CodeXBots/Nobita-Stream-Bot">
+<p align="center"><a href="https://render.com/deploy?repo=https://github.com/CodeXBots/File-Stream-Bot">
 <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
 </a></p>
 <h3 align="center">
@@ -104,8 +102,8 @@
 </h3>
 <p>
 <pre>
-git clone https://github.com/CodeXBots/Nobita-Stream-Bot
-cd Nobita-Stream-Bot
+git clone https://github.com/CodeXBots/File-Stream-Bot
+cd File-Stream-Bot
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 pip install -r requirements.txt
