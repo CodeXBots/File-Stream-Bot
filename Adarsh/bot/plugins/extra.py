@@ -17,12 +17,12 @@ async def maintainers(b,m):
     except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="ɪ  ᴀᴍ  ᴍᴀɪɴᴛᴀɪɴᴇᴅ  ʙʏ  [ʀᴀʜᴜʟ](https://telegram.me/RahulReviews)",
+                    text="ɪ  ᴀᴍ  ᴍᴀɪɴᴛᴀɪɴᴇᴅ  ʙʏ  [ʀᴀʜᴜʟ](https://telegram.me/CodeXBro)",
                     
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ   💻", url=f"https://telegram.me/CodeXBro")
+                                InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ   🧑‍💻", url=f"https://youtube.com/@RahulReviews")
                             ]
                         ]
                     ),
@@ -32,38 +32,42 @@ async def maintainers(b,m):
          
 @StreamBot.on_message(filters.regex("follow❤️"))
 async def follow_user(b,m):
+    btn = [[
+        InlineKeyboardButton(text="ᴛᴡɪᴛᴛᴇʀ", url="https://twitter.com/RahulReviewsYT"),
+        InlineKeyboardButton(text="ɪɴꜱᴛᴀɢʀᴀᴍ", url="https://instagram.com/RahulReviewsYT")
+        ],[
+        InlineKeyboardButton(text="ᴏᴜʀ  ᴏꜰꜰɪᴄɪᴀʟ  ᴄʜᴀɴɴᴇʟ", url="https://telegram.me/RahulReviews")
+    ],[
+        InlineKeyboardButton(text="ꜱᴜʙꜱᴄʀɪʙᴇ  ᴏᴜʀ  ʏᴛ  ᴄʜᴀɴɴᴇʟ", url="https://youtube.com/@RahulReviews")
+    ],[
+        InlineKeyboardButton(text="ɢɪᴛʜᴜʙ", url="https://github.com/CodeXBots"),
+        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ", url="https://telegram.me/RahulReviewsYT")
+    ]]
     try:
        await b.send_message(chat_id=m.chat.id,text="HELLO",quote=True)
     except Exception:
-                await b.send_message(
+                await StreamBot.send_photo(
                     chat_id=m.chat.id,
-                    text="<b>HERE'S THE FOLLOW LINK</b>",
-                    
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                            [
-                                InlineKeyboardButton("FOLLOW ME", url=f"https://instagram.com/RahulReviewsYT")
-                            ]
-                        ]
-                    ),
-                    
-                    disable_web_page_preview=True)
+                    photo='https://telegra.ph/file/b681d379605d3d3a9fa1c.jpg',
+                    caption="<b>ᴏᴜʀ  ꜱᴏᴄɪᴀʟ  ᴍᴇᴅɪᴀ  ᴘʟᴀᴛꜰᴏʀᴍꜱ</b>",
+                    reply_markup=InlineKeyboardMarkup(btn))
         
 
-@StreamBot.on_message(filters.regex("DC"))
-async def start(bot, update):
-    text = START_TEXT.format(update.from_user.dc_id)
-    await update.reply_text(
-        text=text,
-        disable_web_page_preview=True,
-        quote=True
-    )
+@StreamBot.on_message(filters.regex("Gift💰"))
+async def start(b,m):
+    try:
+       await b.send_message(chat_id=m.chat.id,text="HELLO",quote=True)
+    except Exception:
+                await StreamBot.send_photo(
+                    chat_id=m.chat.id,
+                    photo='https://graph.org/file/8a955c85e785a5d95ba0c.jpg',
+                    caption="<b><blockquote>❤️‍🔥 𝐓𝐡𝐚𝐧𝐤𝐬 𝐟𝐨𝐫 𝐬𝐡𝐨𝐰𝐢𝐧𝐠 𝐢𝐧𝐭𝐞𝐫𝐞𝐬𝐭 𝐢𝐧 𝐃𝐨𝐧𝐚𝐭𝐢𝐨𝐧</blockquote>\n\n<b><i>💞  ɪꜰ ʏᴏᴜ ʟɪᴋᴇ ᴏᴜʀ ʙᴏᴛ ꜰᴇᴇʟ ꜰʀᴇᴇ ᴛᴏ ᴅᴏɴᴀᴛᴇ ᴀɴʏ ᴀᴍᴏᴜɴᴛ ₹𝟷𝟶, ₹𝟸𝟶, ₹𝟻𝟶, ₹𝟷𝟶𝟶, ᴇᴛᴄ.</i></b>\n\n❣️ 𝐷𝑜𝑛𝑎𝑡𝑖𝑜𝑛𝑠 𝑎𝑟𝑒 𝑟𝑒𝑎𝑙𝑙𝑦 𝑎𝑝𝑝𝑟𝑒𝑐𝑖𝑎𝑡𝑒𝑑 𝑖𝑡 ℎ𝑒𝑙𝑝𝑠 𝑖𝑛 𝑏𝑜𝑡 𝑑𝑒𝑣𝑒𝑙𝑜𝑝𝑚𝑒𝑛𝑡\n\n💖 𝐔𝐏𝐈 𝐈𝐃 : <code>RahulReviews@sbi</code>")
 
     
     
 @StreamBot.on_message(filters.command("list"))
 async def list(l, m):
-    LIST_MSG = " {},\nHere is a list of all my commands \n \n 1 . `start⚡️` \n 2. `help📚` \n 3.`follow❤️` \n 4. `ping📡` \n 5. `status📊` \n 6. `maintainers😎` "
+    LIST_MSG = " {},\nHere is a list of all my commands \n \n 1 . `Start⚡️` \n 2. `Help📚` \n 3.`Follow❤️` \n 4. `Ping📡` \n 5. `Status📊` \n 6. `Owner😎` "
     await l.send_message(chat_id = m.chat.id,
         text = LIST_MSG.format(m.from_user.mention(style="md"))
         
