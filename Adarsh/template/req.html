@@ -3,56 +3,189 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta property="og:image" content="https://graph.org/file/5e6d18610741226005e6e.jpg" itemprop="thumbnailUrl">
+    <meta property="og:image" content="https://i.ibb.co/M8S0Zzj/live-streaming.png" itemprop="thumbnailUrl">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="monetag" content="f3ecc71ccb639ccf66d9d0dee93d3e7a">
     <title>%s</title>
-    <link rel="stylesheet" type='text/css' href="https://drive----google.com/uc?export=view&id=1pVLG4gZy7jdow3sO-wFS06aP_A9QX0O6">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius">
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
-
-
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css"/>
 <style>
       marquee{
-      font-size: 20px;
-      font-weight: 800;
+      font-size: 22px;
       color: Black;
       font-family: serif;
       }
     </style>
-    <style>
-      marquee{
-      font-size: 30px;
-      font-weight: 800;
-      color: Black;
-      font-family: serif;
-      }
- 
-    </style>
+<style>
+    body {
+        font-family: sans-serif;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+    }
+	#player-container {
+        margin: 1px;
+    }
+	.container {
+        overflow: hidden;
+        *zoom: 1;
+        margin: 0 1px;
+	margin-bottom: 20px;
+    }
+	.set-container {
+	padding: 15px;
+    }
+	.containerbox {
+        overflow: hidden;
+        *zoom: 1;
+	margin-bottom: 70px;
+    }
+	.mainupdates {
+	overflow: hidden;
+        *zoom: 1;
+	margin-bottom: 60px;
+    }
+    
+    #info-box {
+        border: 1px solid #140cf0;
+        border-radius: 10px;
+        padding: 5px;
+        width: auto;
+        text-align: left;
+        margin: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        word-wrap: break-word;
+    }
+
+	#button-container1 {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #button-container1 button {
+        flex: 1 0 auto;
+        height: 40px;
+        padding: 0 20px;
+        margin: 5px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: box-shadow 0.3s, background-color 0.3s, color 0.3s;
+    }
+
+    #button-container1 button:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #button-container1 button#vlc-btn,
+    #button-container1 button#pi-btn,
+    #button-container1 button#sp-btn,
+    #button-container1 button#mx-btn {
+        background-color: Lavender; 
+        color: #ffffff; 
+    }
+    #button-container2 button#dl-btn,
+    #button-container2 button#tgfile-btn,
+    #button-container2 button#tg-btn {
+        background-color: #2D76FF; 
+        color: #ffffff; 
+    }
+
+    #button-container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #button-container2 button {
+        height: 40px;
+        padding: 0 20px;
+        margin: 5px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: box-shadow 0.3s, background-color 0.3s, color 0.3s;
+    }
+
+    #button-container2 button:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+
+</style>
+
 </head>
 
 <body>
-
+<div class="set-container">
+    <div class="container">
     <header>
-        <marquee bgcolor="#808080"
+        <marquee bgcolor="#808080">
 <div class="toogle"></div>
         <div id="file-name">
             %s
         </div>
 </marquee>
     </header>
-
-    <div class="container">
         <tag src="%s" class="player"></tag>
     </div>
+<div class="containerbox"> 
+	<div style="margin-bottom: 5px; margin-top: 10px">𝐒𝐭𝐫𝐞𝐚𝐦 𝐎𝐩𝐭𝐢𝐨𝐧𝐬 :</div>
+        <div id="button-container1">
+            <button id="vlc-btn" onclick="playOnline()">
+                <img src="https://i.ibb.co/GtnGhBV/videolan-vlc-logo-icon-170258.png" alt="vlc_logo" width="110px" height="40px"/>
+            </button>
+            <button id="mx-btn" onclick="playOnlineMx()"><img src="https://i.ibb.co/djV3Fn8/mxlogo.png" alt="mx_logo" width="120px">
+            </button>
+        </div>
+        <div style="margin-bottom: 5px; margin-top: 5px">
+        <div id="button-container1">
+            <button id="sp-btn" onclick="playOnlinesp()">
+                <img src="https://i.ibb.co/vZxWgz5/ZKTgV9HV.png" alt="splayer_logo" width="130px">
+            </button>
+            <button id="pi-btn" onclick="playOnlinepi()"><img src="https://i.ibb.co/JsDNHgz/c0C4vnAa.png" alt="playit_logo" width="140px">
+            </button>
+        </div>
+	</div>
+	<div style="margin-bottom: 5px; margin-top: 10px"></div>
+        <div id="button-container2">
+            <button id="dl-btn" onclick="download()">
+                <i class="fas fa-download"></i> Download Now
+            </button>
+        </div>
+</div>
+<div class="containerbox"> 
+     <div id="info-box"> 
+     <p style="font-size: 15px; color:#120e0e;"><FONT COLOR="#ff0000"><u><b>𝐍𝐨𝐭𝐞</u> :</b>  </FONT>ɪꜰ ʏᴏᴜ ꜰɪɴᴅ ᴀɴʏ ʙʀᴏᴋᴇɴ ʟɪɴᴋ ᴛʜᴇɴ ᴘʟᴇᴀsᴇ ʀᴇᴘᴏʀᴛ ᴛᴏ ᴍʏ <a href="https://telegram.me/CodeXSupport" style="color: blue"><b>sᴜᴘᴘᴏʀᴛ ᴛᴇᴀᴍ</b></a></p>
+     </div>
+</div>
 
-    <footer>
-	   <p> <center><h4>Video not playing? Possibly because your browser or the player doesn't support codec. Please download and watch :D</h4></center>
-    </p>	     
-    </footer>
-    <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
+<center>
+<div style="margin-bottom: 10px; margin-top: 10px">𝐅𝐨𝐥𝐥𝐨𝐰 𝐎𝐮𝐫 𝐒𝐨𝐜𝐢𝐚𝐥 𝐌𝐞𝐝𝐢𝐚 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦𝐬 💞</div>
+<h3><b><a href="https://www.github.com/CodeXBots"><img alt="replit" src="https://img.shields.io/badge/-Github-black?style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://youtube.com/@RahulReviews"><img alt="replit" src="https://img.shields.io/badge/-Facebook-blue?style=for-the-badge&logo=facebook&logoColor=white"/></a>
+<br><a href="https://youtube.com/@RahulReviews"><img alt="replit" src="https://img.shields.io/badge/-youtube-red?style=for-the-badge&logo=youtube&logoColor=white"/></a></b></h3></center>
+
+<br>
+<br>
+<br>
+
+	<div class="mainupdates">
+<center> 
+<div style="margin-bottom: 10px; margin-top: 20px">𝐉𝐨𝐢𝐧 𝐎𝐮𝐫 𝐌𝐚𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 💖</div>
+<h3><b>   
+    <a href="https://telegram.me/RahulReviews"> <img src="https://img.shields.io/badge/Updates- Channel -blueviolet?style=for-the-badge" alt="Channel"> </a> 
+</b></h3></center>
+	</div>
+    </div>
+</div>	
+                  
+    
+    <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
 	<script>
         const controls = [
               'play-large',
@@ -62,15 +195,115 @@
               'progress', 
               'current-time',
               'duration',
-              'mute',
-              'volume',
-              'captions',
               'settings',
-              'pip',
-              'airplay',
-              'download',
               'fullscreen'
             ];
+	</script>
+	<div>
+		<script>
+    const currentUrl = window.location.href;
+    const finalUrl = currentUrl.replace("/watch/", "/");
+
+    function playOnline() {
+        const finalLinkUrl = finalUrl;
+        const vlcUrl = `vlc://${finalLinkUrl}`;
+        window.location.href = vlcUrl;
+    }
+
+    function playOnlineMx() {
+        const finalLinkUrl = finalUrl;
+        const mxUrl = `intent:${finalLinkUrl}#Intent;package=com.mxtech.videoplayer.ad;end`;
+        window.location.href = mxUrl;
+    }
+    
+    function playOnlinesp() {
+        const finalLinkUrl = finalUrl;
+        const spUrl = `intent:${finalLinkUrl}#Intent;action=com.young.simple.player.playback_online;package=com.young.simple.player;end`;
+        window.location.href = spUrl;
+    }
+    
+    function playOnlinepi() {
+        const finalLinkUrl = finalUrl;
+        const piUrl = `playit://playerv2/video?url=${finalLinkUrl}&amp;title={{file_name}}`;
+        window.location.href = piUrl;
+    }
+			
+    function download() {
+        const finalLinkUrl = finalUrl;
+        window.location.href = finalLinkUrl;
+    }
+
+    function openTgBot() {
+        const createLinkUrl = "https://telegram.dog/";
+        window.open(createLinkUrl, "_blank");
+    }
+
+    function openModalTG() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "block";
+
+        const words = [
+            "Received File request...✅",
+            "Processing your request...⌛",
+            "Generating your link...🔗",
+            "Sending link to you...🚀",
+            "Redirecting To Telegram...😉"
+        ];
+
+        let index = 0;
+        const timerElement = document.getElementById("timer");
+        timerElement.innerText = words[index];
+
+        const timer = setInterval(() => {
+            index++;
+            if (index < words.length) {
+                timerElement.innerText = words[index];
+            } else {
+                clearInterval(timer);
+                TGre();
+                modal.style.display = "none";
+            }
+        }, 1000);
+    }
+
+    function TGre() {
+        const tglink = "";
+        window.location.href = tglink;
+    }
+
+    function openModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "block";
+
+        const words = [
+            "Received Download request...✅",
+            "Processing your request...⌛",
+            "Generating your link...🔗",
+            "Sending link to you...🚀",
+            "Download has started...😉"
+        ];
+
+        let index = 0;
+        const timerElement = document.getElementById("timer");
+        timerElement.innerText = words[index];
+
+        const timer = setInterval(() => {
+            index++;
+            if (index < words.length) {
+                timerElement.innerText = words[index];
+            } else {
+                clearInterval(timer);
+                download();
+                modal.style.display = "none";
+            }
+        }, 1000);
+    }
+
+    function download() {
+        const finalLinkUrl = finalUrl;
+        window.location.href = finalLinkUrl;
+    }
+	
         document.addEventListener('DOMContentLoaded', () => {
             const player = Plyr.setup('.player', { controls });
         });
@@ -78,6 +311,16 @@
         const body = document.querySelector('body');
         const footer = document.querySelector('footer');
         const toogle = document.querySelector('.toogle');
+        toogle.onclick = () => {
+            body.classList.toggle('dark')
+            footer.classList.toggle('dark')
+        }
     </script>
+	</div>
+<footer>
+        <p style="font-size: 12px; color:#7b89a3;padding-top: 30px ;margin:0px 10px; border-top: 1px solid #c2cee3;">
+      This website only provides a service that helps you to play your videos online without downloading. It does not offer storage or dissemination functions. You can report videos that contain issues such as copyright infringement, explicit content, 18+, violence, etc. <a href="https://telegram.me/CodeXBro" style="color: red"><b>Report</b></a>
+      <p style="text-align:center">&copy; Copyright 2024<br>All Rights Reserved</p>
+</footer>
 </body>
 </html>
