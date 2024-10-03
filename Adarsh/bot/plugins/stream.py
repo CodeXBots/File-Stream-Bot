@@ -114,7 +114,6 @@ async def private_receive_handler(c: Client, m: Message):
         k=await m.reply_text(
             text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), stream_link, online_link),
             quote=True,
-            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("ꜱᴛʀᴇᴀᴍ  🖥️", url=stream_link),
                  InlineKeyboardButton('📥  ᴅᴏᴡɴʟᴏᴀᴅ  📥', url=online_link)],
@@ -159,7 +158,6 @@ async def channel_receive_handler(bot, broadcast):
         await bot.edit_message_reply_markup(
             chat_id=broadcast.chat.id,
             message_id=broadcast.id,
-            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("ꜱᴛʀᴇᴀᴍ  🖥️", url=stream_link),
