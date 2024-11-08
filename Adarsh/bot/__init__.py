@@ -1,6 +1,6 @@
 # (c) CodeXBots
 from pyrogram import Client
-import pyromod.listen
+from pyrogram.types import Message
 from ..vars import Var
 from os import getcwd
 
