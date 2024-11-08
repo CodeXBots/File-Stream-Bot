@@ -77,6 +77,10 @@ async def start_services():
     print('---------------------------------------------------------------------------------------------------------')
     print('Give a star to my repo https://github.com/CodeXBots  also follow me for new bots')
     print('---------------------------------------------------------------------------------------------------------')
+    try: 
+        await StreamBot.send_message(chat_id=Var.OWNER_ID[0] ,text='<b>ʙᴏᴛ ʀᴇsᴛᴀʀᴛᴇᴅ !!</b>')
+    except Exception as e:
+        print(f'got this err to send restart msg to owner : {e}')
     await idle()
 
 if __name__ == '__main__':
