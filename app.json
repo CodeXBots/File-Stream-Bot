@@ -80,11 +80,6 @@
           "value": "True",
           "required": false
       },
-       "MY_PASS": {
-          "description": "Leave empty if dont need password else enter Your Password",
-          "value": "None",
-          "required": false
-      },
       "BIND_ADRESS": {
           "description": "Read the readme for more info about this var  Leave Empty  For heroku",
           "required": false
@@ -94,18 +89,23 @@
           "required": false
       },
       "name": {
-          "description": " Session Name for Bot [ Add]",
+          "description": "Session Name for Bot",
           "value": "File-Stream-Bot",
           "required": false
-      }
-  },
-  "buildpacks": [{
-      "url": "heroku/python"
+        },
+        "BAN_ALERT": {
+            "description": "[Optional] Add the text you wish to display when attempting to get links while banned."
+            
+        }
+    },
+    "addons": [],
+    "buildpacks": [{
+        "url": "heroku/python"
     }],
-  "formation": {
-      "web": {
-          "quantity": 1,
-          "size": "free"
-      }
-  }
+    "formation": {
+        "web": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    }
 }
