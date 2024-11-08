@@ -1,4 +1,5 @@
-Pyrofork
+pyrogram==2.0.106
+pyrofork==2.3.43
 tgcrypto
 aiohttp
 python-dotenv
@@ -8,4 +9,5 @@ dnspython
 apscheduler
 requests
 psutil
-pyromod
+Flask
+gunicorn
